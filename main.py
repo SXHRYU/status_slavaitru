@@ -99,3 +99,6 @@ class TreeStore:
                 item.update({"children": []})
                 items_dict.update({item["id"]: item})
             return items_dict
+
+    def __repr__(self) -> str:
+        return f"\tTreeStore: ({len(self.items)}) items."
